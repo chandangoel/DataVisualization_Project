@@ -503,7 +503,7 @@
             
                 // Add X axis
                 var dv2_x = d3.scaleLinear()
-                        .domain(d3.extent(dv2_data, function(d) { return d.year; }))
+                        .domain(d3.extent(dv2_data, function(d) { return Number(d.year); }))
                         .range([ 0, dv2_width ]);
                 
                 dv2_svg
