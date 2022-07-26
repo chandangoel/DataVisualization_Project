@@ -492,8 +492,15 @@
 
             var dv2_url = "https://raw.githubusercontent.com/rajlakshmank/rajlakshmank.github.io/master/data/top-10-countries-population-growth-data.csv"
             
+
+            var rowConverter = function(d) {
+              return {
+                year: Number(d.year)
+              };
+            }
+
             //Read the data from Csv
-            d3.csv(dv2_url, function(dv2_data) {
+            d3.csv(dv2_url, rowConverter, function(dv2_data) {
             
                 //console.log(dv2_data);
 
@@ -504,7 +511,7 @@
             
                 // Add X axis
                 var dv2_x = d3.scaleLinear()
-                        .domain(d3.extent(dv2_data, function(d) { return number: d.year; }))
+                        .domain(d3.extent(dv2_data, function(d) { return d.year; }))
                         .range([ 0, dv2_width ]);
                 
                 dv2_svg
@@ -694,7 +701,7 @@
                 .attr("class","dv2-anntn-2-text2 annotation-text")
                 .attr("x", 140)
                 .attr("y", 470)
-                .text("decline, whihch includes India")
+                .text("decline, which includes India")
                 .style("visibility","hidden")
                 .transition()
                 .delay(ant_delay)
