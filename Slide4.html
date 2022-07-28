@@ -58,9 +58,9 @@
 					<div class="slider-block" style="width:70%">
 						<input id="yearRange"
 							type="range" 
-							min="1990" 
-							max="2019" 
-							value="2019" 
+							min="2001" 
+							max="2020" 
+							value="2001" 
 							step="1" 
 							class="slider"/>
 					</div>
@@ -172,8 +172,13 @@
         //Calling function to plot the graph for the initial year value 
         update(2001);
 
+        // Get time slider value
+	    var getTimeSliderValue = function() {
+		    return document.getElementById("yearRange").value;
+	    }
+
         //Function to draw plot for the selected year value
-        function update(selected_year) {
+        function update(getTimeSliderValue()) {
 
             //Read the csv file
             d3.csv(data_url, function(data) {
