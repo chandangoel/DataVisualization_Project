@@ -505,6 +505,8 @@
                 var dv2_x = d3.scaleLinear()
                         .domain(d3.extent(dv2_data, function(d) { return d3.format("c")(d.year); }))
                         .range([ 0, dv2_width ]);
+                console.log(d.year)
+                console.log(d3.format("c")(d.year))
             
                         /*.domain(d3.extent(dv2_data, function(d) { return + formatnum(d.year);}))*/
                 dv2_svg
