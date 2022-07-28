@@ -54,6 +54,19 @@
             <!-- Webpage column division for graph-->
             <div class="column">
                 <h2 class="graph_header">Decadal Population Growth Rate <br>For EAG States, Non-EAG States And India</h2>
+                <div class="slidecontainer" >
+					<div class="slider-block" style="width:70%">
+						<input id="yearRange"
+							type="range" 
+							min="1990" 
+							max="2019" 
+							value="2019" 
+							step="1" 
+							class="slider"/>
+					</div>
+					<div id="yearValue" class="slider-label slider-block" style="width:10%"/>
+				</div>
+                
                 <div class="graph_buttons">
                     <button class="button" onclick="update(2001)">2001</button>
                     <button class="button" onclick="update(2011)">2011</button>
