@@ -171,6 +171,16 @@
         var data_url = "https://chandangoel.github.io/DataVisualization_Project/data/India-StateWise-Pop-Growth.csv"
         //Calling function to plot the graph for the initial year value 
         update(2001);
+        var slider = document.getElementById("yearRange");	
+		var output = document.getElementById("yearValue");
+		output.innerHTML = slider.value;
+		
+		// Update the current slider value (each time you drag the slider handle)
+		slider.oninput = async function() {
+			output.innerHTML = this.value;
+		    update(this.value);
+		}
+		
 
         // Get time slider value
 	    var getTimeSliderValue = function() {
