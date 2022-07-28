@@ -500,7 +500,7 @@
                 var dv2_sumstat = d3.nest()
                                 .key(function(d) { return d.country;})
                                 .entries(dv2_data);
-                var formatnum = d3.format("")
+                var formatnum = d3.format("c")
                 // Add X axis
                 var dv2_x = d3.scaleLinear()
                         .domain(d3.extent(dv2_data, function(d) { return + formatnum(d.year);}))
