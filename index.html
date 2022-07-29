@@ -179,7 +179,7 @@
                 dv1_yAxis
                     .transition()
                     .duration(1000)
-                    .call(d3.axisLeft(dv1_y))
+                    .call(d3.axisLeft(dv1_y).ticks(10))
                     .selectAll("text")
                     .attr("class","graph_axis_text")
                 
