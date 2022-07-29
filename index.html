@@ -585,7 +585,7 @@
                     var d = d3.select(this).data()[0]
                     dv2_tooltip
                         .style('display', 'inline')
-                        .html('Country: ' + d.key)
+                        .html('Country: ' + d.key + "Year:" + d.year + "Growth Rate:" + d.population_growth_rate)
                         .style('left', (d3.event.pageX))
                         .style('top', (d3.event.pageY));
                 }
