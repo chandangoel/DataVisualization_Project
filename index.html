@@ -532,7 +532,7 @@
                 var formatnum = d3.format("c")
                 // Add X axis
                 var dv2_x = d3.scaleLinear()
-                        .domain(d3.extent(dv2_data, function(d) { return d3.format("c")(d.year);}))
+                        .domain(d3.extent(dv2_data, function(d) { return d3.format("d")(d.year);}))
                         .range([ 0, dv2_width ]);
                 
             
