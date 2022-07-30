@@ -13,7 +13,7 @@
     <body>
         <!-- Webpage Header -->
         <div class="header">
-            <h1>Is India Slowing Its Population Growth?</h1>
+            <h1>Is India Slowing Its Population Growth?1</h1>
             <!-- <h1>Can India stop its population implosion?</h1>-->
 
             <p class="header-text-footer-1">Data Visualization Assignment - UIUC - MSDS</p>
@@ -541,7 +541,7 @@
                     .append("g")
                     .attr("class","dv2 X-axis")
                     .attr("transform", "translate(0," + dv2_height + ")")
-                    .call(d3.axisBottom(dv2_x).ticks(10))
+                    .call(d3.axisBottom(dv2_x).ticks(10).tickFormat(d3.format("d")))
                     .selectAll("text")
                     .attr("class","graph_axis_text")
                 
