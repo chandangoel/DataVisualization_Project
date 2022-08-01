@@ -177,24 +177,28 @@ body {
   }
 
   .annotation-rect {
-    stroke: #0e7013;
+    /*stroke: #0e7013;*/
+    stroke: black;
     fill-opacity: 10%;
     fill: none;
   }
 
   .annotation-rect-outlier {
-    stroke: #d817b8;
+    /*stroke: #d817b8;*/
+    stroke: black;
     fill-opacity: 10%;
     fill: none;
   }
 
   .annotation-text {
-    fill: #0e7013;
+    /*fill: #0e7013;*/
+    fill: black;
     font-size: 14;
   }
 
   .annotation-text-outlier {
-    fill: #d817b8;
+    /*fill: #d817b8;*/
+    fill: black;
     font-size: 14;
   }
 
@@ -205,23 +209,28 @@ body {
   }
 
   .annotation-path {
-      stroke: #0e7013;
-      fill: none;
+    
+    /*stroke: #0e7013;*/
+    stroke: black;
+    fill: none;
   }
 
   .annotation-path-outlier {
-    stroke: #d817b8;
+    /*stroke: #d817b8;*/
+    stroke: black;
     fill: none;
 }
 
   .annotation-circle {
-    stroke: #0e7013;
+    /*stroke: #0e7013;*/
+    stroke: black;
     fill-opacity: 10%;
     fill: none;
   }
 
   .annotation-circle-outlier {
-    stroke: #d817b8;
+    /*stroke: #d817b8;*/
+    stroke: black;
     fill-opacity: 10%;
     fill: none;
   }
