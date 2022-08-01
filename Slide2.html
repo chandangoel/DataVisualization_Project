@@ -14,8 +14,8 @@
         <!-- Webpage Header -->
         <div class="header">
             <h2>Is India Making Progress In Slowing Its Population Growth?</h2>
-            <p class="header-text-footer-1">Data Visualization Assignment - UIUC - MSDS</p>
-            <p class="header-text-footer-2">by Chandan Goel</p>
+            <!-- <p class="header-text-footer-1">Data Visualization Assignment - UIUC - MSDS</p> -->
+            <p class="header-text-footer-1">by Chandan Goel</p>
         </div>
 
         <!-- Webpage header avigation Bar -->
@@ -165,7 +165,7 @@
             svg
                 .append("g")
                 .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x))
+                .call(d3.axisBottom(x).ticks(10).tickFormat(d3.format("d"))))
                 .selectAll("text")
                 .attr("transform", "translate(-10,10)rotate(-45)")
                 .attr("class","graph_axis_text")
